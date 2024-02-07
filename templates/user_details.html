@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>User_details</h1>
+
+
+    <h1> welcome {{UO.username}}</h1>
+
+    <h1>{{UO.first_name}}</h1>
+    <h1>{{UO.last_name}}</h1>
+    <h1>{{UO.email}}</h1>
+    <br><br><br>
+    <div>
+
+
+        {{UPO.profile_pic}}
+
+        <br><br>
+
+
+
+        <img src="{{ UPO.profile_pic.url }}" alt="PP" style="width: 100px; height:100px;">
+
+    </div>
+
+
+    <a href="{% url 'ulogin' %}">Logout</a>
+</body>
+
+</html>
